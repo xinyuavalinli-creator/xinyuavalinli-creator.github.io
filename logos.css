@@ -1,0 +1,22 @@
+.brand-symbol{font-style:normal;letter-spacing:normal;width:51px;height:51px;display:flex;align-items:center;flex-shrink:0}.brand-symbol svg{display:block;width:100%;height:100%;overflow:visible}.brand-name{font-family:'Songti SC','STSong','SimSun',serif;font-size:21px;letter-spacing:.22em;font-weight:400;white-space:nowrap}.brand-name small{font-family:Arial,sans-serif;font-size:8px;letter-spacing:.12em;margin-top:6px}.brand{gap:12px}
+@media(max-width:700px){.brand-symbol{width:40px;height:40px}.brand-name{display:block;font-size:17px;letter-spacing:.12em}.brand-name small{display:none}.brand{gap:7px}.site-header{gap:10px}.site-header nav{gap:15px}}
+@media(max-width:380px){.site-header nav{gap:10px}.site-header{gap:6px}.brand-name{font-size:15px}.brand-symbol{width:34px;height:34px}}
+
+.brand-name{font-family:Arial,sans-serif;font-size:20px;font-weight:800;letter-spacing:-.045em}.brand-name small{font-size:7px;font-weight:400;letter-spacing:.07em}.brand-symbol{width:47px;height:47px}
+@media(max-width:700px){.brand-name{font-size:14px;letter-spacing:-.04em}.brand-symbol{width:36px;height:36px}.brand-name small{display:none}}
+@media(max-width:380px){.brand-name{font-size:12px}.brand-symbol{width:30px;height:30px}}
+
+/* Approved home identity. */
+.hero-composition{grid-template-columns:38% 62%;align-items:center;min-height:420px;padding:35px 0 30px}
+.home-brand-motion{position:relative;min-width:0;color:var(--paper);align-self:stretch;display:flex;align-items:center}
+.home-brand-motion>svg{display:block;width:100%;height:100%;min-height:300px;max-height:460px;overflow:visible}
+.home-brand-motion .face-outline{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.home-brand-motion .face-type{fill:currentColor}
+.home-brand-motion .wire-ghost{fill:none;stroke:currentColor;stroke-width:1;stroke-dasharray:3 4;vector-effect:non-scaling-stroke}
+.home-brand-motion .wire-accent{fill:none;stroke:currentColor;stroke-width:2;vector-effect:non-scaling-stroke}
+.home-brand-motion .wire-tether{fill:none;stroke:currentColor;stroke-width:.8;stroke-dasharray:3 3}
+#brand-motion-toggle{position:absolute;right:4%;bottom:0;background:transparent;color:inherit;font-size:10px;padding:10px 0;border-bottom:1px solid #f5f2e960}
+.hero-feature{max-width:980px;margin:10px 0 90px auto;padding-left:18%;position:relative}
+.hero-feature .hero-art{padding-left:0}.hero-feature .hero-main-image img{height:clamp(250px,29vw,440px)}
+@media(min-width:1600px){.hero-composition{min-height:500px}.home-brand-motion>svg{max-height:520px}}
+@media(max-width:700px){.hero-composition{display:grid;grid-template-columns:1fr;padding:10px 0 24px;gap:10px;min-height:0}.home-brand-motion{grid-row:1;min-height:235px}.home-brand-motion>svg{min-height:220px;max-height:310px}#brand-motion-toggle{bottom:0;right:0;font-size:9px}.hero-intro{margin-top:18px}.hero-feature{padding-left:35px;margin:0 0 62px}.hero-feature .hero-art{margin-top:10px}.hero-feature .hero-main-image img{height:auto}}
