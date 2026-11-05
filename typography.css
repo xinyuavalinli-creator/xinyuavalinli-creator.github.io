@@ -1,0 +1,72 @@
+/* Match the portfolio's Century Gothic regular / bold typography. */
+@font-face {
+  font-family: "Portfolio Gothic";
+  src: url("assets/fonts/century-gothic-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Portfolio Gothic";
+  src: url("assets/fonts/century-gothic-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --sans: "Portfolio Gothic", "Century Gothic", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --body-size: clamp(16px, 1.3vw, 18px);
+}
+body {font-family: var(--sans);}
+.chapter-intro p,
+.project-body p,
+.about-copy p,
+.hero-intro p,
+body[data-lang=en] .hero-intro p,
+.work-heading-row > p,
+.comic-heading p {
+  font-family: var(--sans);
+  font-size: var(--body-size);
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+.chapter-intro p {max-width: 680px; color: #514e47;}
+.hero-intro p {max-width: 360px;}
+body[data-lang=en] .hero-intro p {max-width: 360px;}
+.chapter-intro h2,
+.project-story h2,
+.comic-heading h2,
+.resume-grid h3,
+.education h4,
+.experience summary strong,
+.chapter-index button,
+.chapter-studies summary {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -.025em;
+}
+.chapter-intro h2 {line-height: 1.2;}
+.education p,
+.experience details p,
+.about-extras,
+.project-info span {font-size: 15px; line-height: 1.8;}
+.story-figure figcaption,
+.gallery-item figcaption,
+.card-description,
+.comic-note {font-family: var(--sans); font-size: 13px; line-height: 1.7;}
+.chapter-index button,
+.chapter-studies summary {font-size: 14px; line-height: 1.6;}
+@media(max-width:700px) {
+  .chapter-intro h2 {font-size: clamp(25px, 5.6vw, 31px);}
+  .chapter-intro p {margin-top: 18px;}
+  .story-figure figcaption,
+  .gallery-item figcaption,
+  .card-description,
+  .comic-note {font-size: 12px;}
+  .education p,
+  .experience details p,
+  .about-extras,
+  .project-info span {font-size: 14px;}
+}
